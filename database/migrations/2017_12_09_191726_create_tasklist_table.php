@@ -14,6 +14,12 @@ class CreateTasklistTable extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
+            
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password', 60);
+            $table->rememberToken();
+            
             $table->string('content');    // content カラム追加
             $table->timestamps();
         });
@@ -27,5 +33,6 @@ class CreateTasklistTable extends Migration
     public function down()
     {
         Schema::drop('tasks');
+        Schema::drop('users');
     }
 }
