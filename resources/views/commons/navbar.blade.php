@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                 @if (Auth::check())
-                <li>{!! link_to_route('messages.create', '新規タスクの投稿') !!}</li>
+                <li>{!! link_to_route('tasks.create', '新規タスクの投稿') !!}</li>
                 
                 <li><a href="#">Users</a></li>
                         <li class="dropdown">

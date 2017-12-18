@@ -24,7 +24,7 @@
             </tbody>
         </table>    
     @endif
-{!! link_to_route('messages.create', 'タスクの投稿',null, ['class' => 'btn btn-primary']) !!}
+{!! link_to_route('tasks.create', 'タスクの投稿',null, ['class' => 'btn btn-primary']) !!}
 
 @endsection
 
